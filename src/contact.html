@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fit Nation - Contact Us</title>
+  </head>
+  <body>
+    <!-- Your HTML goes here -->
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html"> FIT NATION </a>
+      </div>
+      <div class="large-screen-menu">
+        <ul class="nav-links">
+          <li class="link-item">
+            <a href="index.html"> HOME </a>
+          </li>
+          <li class="link-item">
+            <a href="about.html"> ABOUT </a>
+          </li>
+          <li class="link-item">
+            <a href="pricing.html"> PRICING </a>
+          </li>
+
+          <li class="link-item">
+            <a href="gallery.html"> GALLERY </a>
+          </li>
+          <li class="link-item">
+            <a href="contact.html"> CONTACT </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <button class="contact-button">
+          <a href="contact.html">CONTACT US</a>
+        </button>
+      </div>
+      <button class="hamburger">
+        <img
+          src="./images/svgs/hamburger.png"
+          width="30"
+          height="30"
+          alt="no-img /"
+        />
+      </button>
+      <div class="mobile-menu d-none">
+        <ul class="mobile-links">
+          <li class="mobile-link-item">
+            <a href="index.html"> HOME </a>
+          </li>
+          <li class="mobile-link-item">
+            <a href="about.html"> ABOUT </a>
+          </li>
+          <li class="mobile-link-item">
+            <a href="pricing.html"> PRICING </a>
+          </li>
+
+          <li class="mobile-link-item">
+            <a href="gallery.html"> GALLERY </a>
+          </li>
+          <li class="mobile-link-item">
+            <a href="contact.html"> CONTACT </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Hero section -->
+    <div class="hero-section-other">
+      <div class="hero-text-other">
+        <h2>
+          <span class="hero-text-span2"> CONNECT WITH US</span>
+        </h2>
+      </div>
+    </div>
+
+    <div class="contact-section">
+      <div class="contact-section-text">
+        <h2>
+          <span class="contact-section-text-span"> GET IN TOUCH! </span>
+        </h2>
+      </div>
+      <div class="contact-section-form">
+        <form method="POST" id="contact-form">
+          <div class="contact-section-form-input">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter Your Name"
+            />
+            <input type="text" name="email" id="email" placeholder="Email" />
+          </div>
+          <div class="contact-section-form-input">
+            <input
+              class="subject-input"
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Subject"
+            />
+          </div>
+          <div class="contact-section-form-input">
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <button
+            class="contact-submit btn btn-success"
+            type="submit"
+            id="submit"
+          >
+            SUBMIT
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="info-section">
+      <div class="info-cards d-flex flex-wrap">
+        <div class="info-card col-12 col-md-4">
+          <div class="info-card-img">
+            <img src="./images/svgs/location.png" />
+          </div>
+          <div class="info-card-text">
+            <p class="text-title">location</p>
+            <p class="text-desp">
+              We are located in near Boulevard in Sacramento, California, United
+              States of America.
+            </p>
+          </div>
+        </div>
+        <div class="info-card col-12 col-md-4">
+          <div class="info-card-img">
+            <img src="./images/svgs/phone.svg" />
+          </div>
+          <div class="info-card-text">
+            <p class="text-title">Phone</p>
+            <p class="text-desp">
+              We are available 24*7 and in case of queries fell free to call us
+              at +1-541-754 or +1-541-755 .
+            </p>
+          </div>
+        </div>
+        <div class="info-card col-12 col-md-4">
+          <div class="info-card-img">
+            <img src="./images/svgs/email.png" />
+          </div>
+          <div class="info-card-text">
+            <p class="text-title">location</p>
+            <p class="text-desp">
+              Email us at fitnationgymofficial2000@gmail.com or leave an message
+              through connect now page.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer-section">
+      <h3>FIT NATION</h3>
+      <ul class="footer-links">
+        <li class="footer-link-item">
+          <a href="index.html"> HOME </a>
+        </li>
+        <li class="footer-link-item">
+          <a href="about.html"> ABOUT </a>
+        </li>
+        <li class="footer-link-item">
+          <a href="pricing.html"> PRICING </a>
+        </li>
+
+        <li class="footer-link-item">
+          <a href="gallery.html"> GALLERY </a>
+        </li>
+        <li class="footer-link-item">
+          <a href="contact.html"> CONTACT </a>
+        </li>
+      </ul>
+      <div class="social-links">
+        <img src="./images/svgs/fb.svg" width="40" height="40" />
+        <img src="./images/svgs/twitter.svg" width="40" height="40" />
+        <img src="./images/svgs/pinterest.svg" width="40" height="40" />
+      </div>
+      <hr class="hr-line" />
+      <p>Copyright © All rights reserved</p>
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      const form = document.getElementById('contact-form');
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
+
+        Email.send({
+          Host: 'smtp.gmail.com',
+          Username: 'fitnationgymofficial2000@gmail.com',
+          Password: 'fitadmin',
+          To: `${email}`,
+          From: 'fitnationgymofficial2000@gmail.com',
+          Subject: `${subject}`,
+          Body: `${message}`,
+        }).then((message) => alert('Email sent successfully'));
+      });
+    </script>
+  </body>
+</html>

@@ -7,7 +7,8 @@
   "keywords": [],
   "scripts": {
     "deploy": "npx webpack --mode production",
-    "start": "npx webpack serve"
+    "start": "npx webpack serve",
+    "build": "npm run deploy"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.0",
